@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rumpuree World Dance Studio | Salsa, Bachata, Tango, Ballet &amp; Pole Dance</title>
+<meta name="description" content="Rumpuree World Dance Studio — teaching Salsa, Bachata, Argentine Tango, Ballet and Pole Dance for all ages and levels since 2006. Book your free trial class today.">
+<meta name="theme-color" content="#15110F">
+<link rel="icon" type="image/png" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#home" class="brand" aria-label="Rumpuree World Dance Studio — Home">
+      <img src="assets/logo.png" alt="Rumpuree World Dance Studio" class="brand-logo">
+    </a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#classes" data-i18n="nav.classes">Classes</a></li>
+        <li><a href="#schedule" data-i18n="nav.schedule">Schedule</a></li>
+        <li><a href="#royalty" data-i18n="nav.loyalty">Dance Royalty</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span id="langCurrent">EN</span><span class="lang-caret">▾</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox">
+          <li role="option" data-lang="en">English</li>
+          <li role="option" data-lang="bn">বাংলা</li>
+          <li role="option" data-lang="es">Español</li>
+        </ul>
+      </div>
+
+      <a href="#register" class="btn btn-ember nav-cta" data-i18n="nav.cta">Book Free Trial</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="https://goodyeararthurmurray.com/wp-content/uploads/2025/03/bachata2_compressed.webp" alt="" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-light" data-i18n="hero.eyebrow">World Dance Studio · Est. 2006</p>
+        <h1 data-i18n="hero.title">Feel the Music.<br>Master the Floor.</h1>
+        <p class="hero-sub" data-i18n="hero.subtitle">Salsa, Bachata, Argentine Tango, Ballet and Pole Dance — taught by passionate instructors, for every age and every level, since 2006.</p>
+
+        <div class="hero-cta-row">
+          <a href="#register" class="btn btn-ember btn-lg" data-i18n="hero.cta1">Book Your Free Class</a>
+          <a href="#schedule" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">View Schedule</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <strong>18+</strong>
+            <span data-i18n="hero.badge1">Years of Teaching</span>
+          </div>
+          <div class="hero-badge">
+            <strong>5</strong>
+            <span data-i18n="hero.badge2">Dance Disciplines</span>
+          </div>
+          <div class="hero-badge">
+            <strong>∞</strong>
+            <span data-i18n="hero.badge3">All Ages Welcome</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-step registration form -->
+      <div class="reg-card" id="register">
+        <div class="reg-card-head">
+          <p class="eyebrow" data-i18n="form.eyebrow">Get Started</p>
+          <h2 data-i18n="form.title">Reserve Your Free Trial Class</h2>
+          <p class="reg-sub" data-i18n="form.subtitle">Three quick steps. No commitment.</p>
+        </div>
+
+        <div class="reg-progress" aria-hidden="true">
+          <div class="reg-step-dot is-active" data-step="1"><span>1</span></div>
+          <div class="reg-step-line"></div>
+          <div class="reg-step-dot" data-step="2"><span>2</span></div>
+          <div class="reg-step-line"></div>
+          <div class="reg-step-dot" data-step="3"><span>3</span></div>
+        </div>
+
+        <form id="regForm" novalidate>
+          <!-- STEP 1 -->
+          <div class="reg-panel is-active" data-panel="1">
+            <label class="field">
+              <span data-i18n="form.name">Full Name</span>
+              <input type="text" name="fullName" required autocomplete="name">
+            </label>
+            <label class="field">
+              <span data-i18n="form.phone">Phone Number</span>
+              <input type="tel" name="phone" required autocomplete="tel">
+            </label>
+            <label class="field">
+              <span data-i18n="form.email">Email Address</span>
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="reg-panel" data-panel="2">
+            <p class="field-label" data-i18n="form.styleLabel">Which dance style interests you?</p>
+            <div class="choice-grid">
+              <label class="choice"><input type="radio" name="style" value="salsa" required><span data-i18n="classes.salsa.title">Salsa</span></label>
+              <label class="choice"><input type="radio" name="style" value="bachata"><span data-i18n="classes.bachata.title">Bachata</span></label>
+              <label class="choice"><input type="radio" name="style" value="tango"><span data-i18n="classes.tango.title">Argentine Tango</span></label>
+              <label class="choice"><input type="radio" name="style" value="ballet"><span data-i18n="classes.ballet.title">Ballet</span></label>
+              <label class="choice"><input type="radio" name="style" value="pole"><span data-i18n="classes.pole.title">Pole Dance</span></label>
+              <label class="choice"><input type="radio" name="style" value="unsure"><span data-i18n="form.styleUnsure">Not sure yet</span></label>
+            </div>
+            <p class="field-label" data-i18n="form.levelLabel">Your experience level</p>
+            <div class="choice-grid choice-grid-3">
+              <label class="choice"><input type="radio" name="level" value="beginner" required><span data-i18n="form.levelBeginner">Beginner</span></label>
+              <label class="choice"><input type="radio" name="level" value="intermediate"><span data-i18n="form.levelIntermediate">Intermediate</span></label>
+              <label class="choice"><input type="radio" name="level" value="advanced"><span data-i18n="form.levelAdvanced">Advanced</span></label>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="reg-panel" data-panel="3">
+            <p class="field-label" data-i18n="form.timeLabel">Preferred class time</p>
+            <div class="choice-grid choice-grid-3">
+              <label class="choice"><input type="radio" name="time" value="morning" required><span data-i18n="form.timeMorning">Morning</span></label>
+              <label class="choice"><input type="radio" name="time" value="evening"><span data-i18n="form.timeEvening">Evening</span></label>
+              <label class="choice"><input type="radio" name="time" value="weekend"><span data-i18n="form.timeWeekend">Weekend</span></label>
+            </div>
+            <label class="field">
+              <span data-i18n="form.notes">Anything else we should know? (optional)</span>
+              <textarea name="notes" rows="2"></textarea>
+            </label>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="reg-panel" data-panel="success">
+            <div class="reg-success">
+              <div class="reg-success-mark">✓</div>
+              <h3 data-i18n="form.successTitle">You're on the list!</h3>
+              <p data-i18n="form.successText">A member of our team will call you within 24 hours to confirm your free trial class.</p>
+            </div>
+          </div>
+
+          <div class="reg-actions">
+            <button type="button" class="btn btn-outline" id="regBack" data-i18n="form.back" hidden>Back</button>
+            <button type="button" class="btn btn-ember" id="regNext" data-i18n="form.next">Continue</button>
+            <button type="submit" class="btn btn-ember" id="regSubmit" data-i18n="form.submit" hidden>Reserve My Spot</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section-cream" id="about">
+    <div class="container about-grid">
+      <div class="about-media">
+        <img src="https://singhawon.com/images/human1.png" alt="Ballet dancer training at the studio" loading="lazy">
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="about.eyebrow">Our Story</p>
+        <h2 data-i18n="about.title">Eighteen Years of Movement, Music &amp; Community</h2>
+        <p data-i18n="about.p1">rumPUREE is a premier dance studio based in Bangkok, Thailand, renowned for its inclusive and vibrant community. Established in 2006 by Apple, a Harvard graduate who worked in New York City as a Strategic Facility Planner for an architecture firm and fell in love with dancing, her goal was to create a dance community that is easily accessible to people of all ages and backgrounds. rumPUREE offers a diverse range of dance styles taught by a talented and experienced faculty.
+
+        Conveniently located in Bangkok’s central business areas—Asok and Samyan—rumPUREE provides a welcoming space where anyone, regardless of age or experience, can explore and enjoy dance. The studio emphasizes community, connection, and personal growth, making every class not just a lesson, but an opportunity to meet like-minded people, build confidence, and express oneself through movement.
+
+        With its inclusive philosophy, expert instructors, and prime locations, rumPUREE has become a premier destination for dancers seeking both high-quality training and a vibrant, supportive community. rumPUREE is truly a dance studio for all.</p>
+        <p data-i18n="about.p2">Our instructors bring authentic training in Salsa, Bachata, Argentine Tango, Ballet and Pole Dance, blending traditional discipline with a warm, encouraging studio culture.</p>
+
+        <div class="stat-row">
+          <div class="stat"><strong>2006</strong><span data-i18n="about.stat1">Studio Founded</span></div>
+          <div class="stat"><strong>5</strong><span data-i18n="about.stat2">Dance Styles</span></div>
+          <div class="stat"><strong>1000+</strong><span data-i18n="about.stat3">Dancers Trained</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLASSES ============ -->
+  <section class="section section-dark" id="classes">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-light" data-i18n="classes.eyebrow">What We Teach</p>
+        <h2 class="light-heading" data-i18n="classes.title">Dance Styles For Every Story</h2>
+        <p class="section-sub light-sub" data-i18n="classes.subtitle">Six distinct programs. One studio. Find the rhythm that's yours.</p>
+      </div>
+
+      <div class="class-grid">
+        <article class="class-card">
+          <img src="https://rfdance.com/static/salsaGoodForBeginner1-8b0a0d89bf6ecd610a77104149ba0353.png" alt="Salsa dancers in a social circle" loading="lazy">
+          <div class="class-card-body">
+            <span class="tag tag-salsa" data-i18n="classes.level.all">All Levels</span>
+            <h3 data-i18n="classes.salsa.title">Salsa</h3>
+            <p data-i18n="classes.salsa.desc">Vibrant footwork and partner connection rooted in Latin rhythm.</p>
+            <a href="#schedule" data-i18n="classes.cta">View Class Times →</a>
+          </div>
+        </article>
+
+        <article class="class-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Friday_Night_Dancing,_July_15th,_2016_(27721517663).jpg" alt="Couple dancing bachata closely" loading="lazy">
+          <div class="class-card-body">
+            <span class="tag tag-bachata" data-i18n="classes.level.all">All Levels</span>
+            <h3 data-i18n="classes.bachata.title">Bachata</h3>
+            <p data-i18n="classes.bachata.desc">Sensual, close-hold movement built on connection and musicality.</p>
+            <a href="#schedule" data-i18n="classes.cta">View Class Times →</a>
+          </div>
+        </article>
+
+        <article class="class-card">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/71/3b/b9.jpg" alt="Couple dancing Argentine tango" loading="lazy">
+          <div class="class-card-body">
+            <span class="tag tag-tango" data-i18n="classes.level.all">All Levels</span>
+            <h3 data-i18n="classes.tango.title">Argentine Tango</h3>
+            <p data-i18n="classes.tango.desc">The elegant embrace and improvised walk of Buenos Aires' milongas.</p>
+            <a href="#schedule" data-i18n="classes.cta">View Class Times →</a>
+          </div>
+        </article>
+
+        <article class="class-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-myBXbjNN3_SsdNxPTGX3VpbhT1z2xOlgyxW8uYfxZgoMn6GB39dhVYyi&s=10" alt="Beginner ballet class in session" loading="lazy">
+          <div class="class-card-body">
+            <span class="tag tag-ballet" data-i18n="classes.level.kids">Kids &amp; Adults</span>
+            <h3 data-i18n="classes.ballet.title">Ballet</h3>
+            <p data-i18n="classes.ballet.desc">Classical foundation, posture and grace for dancers of any age.</p>
+            <a href="#schedule" data-i18n="classes.cta">View Class Times →</a>
+          </div>
+        </article>
+
+        <article class="class-card">
+          <img src="https://www.insure4sport.co.uk/media/jzxdymap/pole_dancing_benefits_image.jpg" alt="Pole dance fitness studio" loading="lazy">
+          <div class="class-card-body">
+            <span class="tag tag-pole" data-i18n="classes.level.all">All Levels</span>
+            <h3 data-i18n="classes.pole.title">Pole Dance</h3>
+            <p data-i18n="classes.pole.desc">Strength, flexibility and confident artistry on and off the pole.</p>
+            <a href="#schedule" data-i18n="classes.cta">View Class Times →</a>
+          </div>
+        </article>
+
+        <article class="class-card">
+          <img src="https://www.dancingfeeling.com/wp-content/uploads/2015/01/The-Dancing-Feeling-2822-copy.jpg" alt="Group social dance class for all ages" loading="lazy">
+          <div class="class-card-body">
+            <span class="tag tag-social" data-i18n="classes.level.family">Family Friendly</span>
+            <h3 data-i18n="classes.social.title">Open Floor &amp; Socials</h3>
+            <p data-i18n="classes.social.desc">Practice nights and group socials to dance freely with the community.</p>
+            <a href="#schedule" data-i18n="classes.cta">View Class Times →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="section section-cream" id="schedule">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="schedule.eyebrow">Plan Your Week</p>
+        <h2 data-i18n="schedule.title">Weekly Schedule</h2>
+        <p class="section-sub" data-i18n="schedule.subtitle">Tap a day to see classes and events. Updated weekly.</p>
+      </div>
+
+      <div class="day-tabs" id="dayTabs" role="tablist" aria-label="Choose a day"></div>
+
+      <div class="schedule-list" id="scheduleList" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROMOTIONS ============ -->
+  <section class="section section-paper" id="promotions">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="promo.eyebrow">Limited Time</p>
+        <h2 data-i18n="promo.title">Current Promotions</h2>
+      </div>
+
+      <div class="promo-grid">
+        <div class="promo-card">
+          <span class="promo-ribbon" data-i18n="promo.ribbon1">New Student</span>
+          <h3 data-i18n="promo.card1.title">First Class Free</h3>
+          <p data-i18n="promo.card1.desc">Try any style on us — no card, no pressure, just dance.</p>
+        </div>
+        <div class="promo-card">
+          <span class="promo-ribbon" data-i18n="promo.ribbon2">Couples</span>
+          <h3 data-i18n="promo.card2.title">Bring a Partner, Save 20%</h3>
+          <p data-i18n="promo.card2.desc">Sign up together for Bachata or Tango and split the savings.</p>
+        </div>
+        <div class="promo-card">
+          <span class="promo-ribbon" data-i18n="promo.ribbon3">Membership</span>
+          <h3 data-i18n="promo.card3.title">Annual Pass — 2 Months Free</h3>
+          <p data-i18n="promo.card3.desc">Commit for a year and unlock unlimited classes year-round.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DANCE ROYALTY LOYALTY PROGRAM ============ -->
+  <section class="section section-royal" id="royalty">
+    <div class="royal-bg">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Un_tango_sous_les_%C3%A9toiles_(9549045611).jpg" alt="" loading="lazy">
+    </div>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-gold" data-i18n="loyalty.eyebrow">Dance Royalty Program</p>
+        <h2 class="light-heading" data-i18n="loyalty.title">Earn Your Crown, Class by Class</h2>
+        <p class="section-sub light-sub" data-i18n="loyalty.subtitle">Every class you take moves you closer to royalty status — and the rewards that come with it.</p>
+      </div>
+
+      <div class="pass-grid">
+        <div class="pass-card">
+          <div class="pass-top">
+            <span class="pass-tier" data-i18n="loyalty.bronze.name">Bronze Pass</span>
+            <span class="pass-stamp">RWDS</span>
+          </div>
+          <p class="pass-points" data-i18n="loyalty.bronze.points">0 – 19 Classes</p>
+          <ul class="pass-benefits">
+            <li data-i18n="loyalty.bronze.b1">1 point per class attended</li>
+            <li data-i18n="loyalty.bronze.b2">Member newsletter &amp; event invites</li>
+            <li data-i18n="loyalty.bronze.b3">Birthday month discount</li>
+          </ul>
+        </div>
+
+        <div class="pass-card pass-card-gold">
+          <div class="pass-top">
+            <span class="pass-tier" data-i18n="loyalty.gold.name">Gold Pass</span>
+            <span class="pass-stamp">RWDS</span>
+          </div>
+          <p class="pass-points" data-i18n="loyalty.gold.points">20 – 49 Classes</p>
+          <ul class="pass-benefits">
+            <li data-i18n="loyalty.gold.b1">Everything in Bronze, plus:</li>
+            <li data-i18n="loyalty.gold.b2">Priority booking on socials &amp; workshops</li>
+            <li data-i18n="loyalty.gold.b3">One free guest pass every month</li>
+            <li data-i18n="loyalty.gold.b4">10% off studio merchandise</li>
+          </ul>
+        </div>
+
+        <div class="pass-card">
+          <div class="pass-top">
+            <span class="pass-tier" data-i18n="loyalty.royal.name">Royal Pass</span>
+            <span class="pass-stamp">RWDS</span>
+          </div>
+          <p class="pass-points" data-i18n="loyalty.royal.points">50+ Classes</p>
+          <ul class="pass-benefits">
+            <li data-i18n="loyalty.royal.b1">Everything in Gold, plus:</li>
+            <li data-i18n="loyalty.royal.b2">Free class every birthday month</li>
+            <li data-i18n="loyalty.royal.b3">Invitation to the annual Royalty Gala</li>
+            <li data-i18n="loyalty.royal.b4">Reserved front-row seating at showcases</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="royal-cta-row">
+        <a href="#register" class="btn btn-gold btn-lg" data-i18n="loyalty.cta">Join Dance Royalty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-paper" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="testimonials.eyebrow">From Our Dancers</p>
+        <h2 data-i18n="testimonials.title">Stories From the Floor</h2>
+      </div>
+
+      <div class="testi-grid">
+        <figure class="testi-card">
+          <div class="testi-stars" aria-hidden="true">★★★★★</div>
+          <blockquote data-i18n="testimonials.t1.quote">I walked in knowing zero salsa and walked out two years later teaching beginner classes. The instructors genuinely care.</blockquote>
+          <figcaption>
+            <span class="testi-avatar">N</span>
+            <span><strong>Nadia R.</strong> · <span data-i18n="testimonials.t1.role">Salsa Student, 2 years</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="testi-card">
+          <div class="testi-stars" aria-hidden="true">★★★★★</div>
+          <blockquote data-i18n="testimonials.t2.quote">My daughter started ballet here at age six. Watching her confidence grow on that floor has been the best part of our week.</blockquote>
+          <figcaption>
+            <span class="testi-avatar">J</span>
+            <span><strong>James K.</strong> · <span data-i18n="testimonials.t2.role">Parent, Ballet Program</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="testi-card">
+          <div class="testi-stars" aria-hidden="true">★★★★★</div>
+          <blockquote data-i18n="testimonials.t3.quote">Pole dance here is about strength and artistry, not a gimmick. I've never felt stronger or more at home in a studio.</blockquote>
+          <figcaption>
+            <span class="testi-avatar">P</span>
+            <span><strong>Priya S.</strong> · <span data-i18n="testimonials.t3.role">Pole Dance Student</span></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section-dark" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-light" data-i18n="gallery.eyebrow">Inside The Studio</p>
+        <h2 class="light-heading" data-i18n="gallery.title">Moments From the Floor</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-tall">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk94WYCx-D42ssYNbzW0LczDobBfZBgYWG90adOVUPnBfhAPlquj7cRh8&s=10" alt="Tango performance" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://dynamic-media.tacdn.com/media/photo-o/2e/f2/f0/e6/caption.jpg?w=700&h=500&s=1" alt="Tango show performance" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://c8.alamy.com/comp/3E3RDKY/a-large-group-of-people-watches-a-fire-dance-in-bali-at-sunset-the-performers-are-moving-around-a-circle-of-flames-while-the-audience-takes-pictures-3E3RDKY.jpg" alt="Dance festival audience and performers" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://img.magnific.com/premium-photo/dancers-couple-dancing-social-latin-dance-bachata-kizomba-salsa-social-dance-two-elegance-pose-w_1358627-4890.jpg?semt=ais_hybrid&w=740&q=80" alt="Couples dancing socially" loading="lazy">
+        </div>
+        <div class="gallery-item gallery-tall">
+          <img src="https://www.superprof.com.au/blog/wp-content/uploads/2021/06/ballet-dancers-performance.jpg" alt="Ballet dancer performing" loading="lazy">
+        </div>
+        <div class="gallery-item gallery-tall">
+          <img src="https://dance-america.com/cdn/shop/articles/shall-we-dance-a-beginners-guide-to-the-basics-of-ballroom-dancing-1230286.jpg?v=1763428520&width=1100" alt="Ballroom Dancing Basics | Dance America" loading="lazy">
+        </div>
+      
+      <div class="gallery-item gallery-tall">
+          <img src="https://www.seeingdance.com/wp-content/uploads/2023/07/Royal-Ballet-School-Two-Pigeons-230717.jpg" alt="royal ballet Ballet dancer" loading="lazy">
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-cream" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Visit Us</p>
+        <h2 data-i18n="contact.title">Come Dance With Us</h2>
+        <p data-i18n="contact.p1">Drop by for a tour, watch a class from the lobby, or just say hello. New dancers are always welcome on the floor.</p>
+
+        <ul class="contact-list">
+          <li><strong data-i18n="contact.addressLabel">Studio Address</strong><span>House 12, Road 5, Dhaka, Bangladesh</span></li>
+          <li><strong data-i18n="contact.phoneLabel">Phone</strong><span>+880 1XXX-XXXXXX</span></li>
+          <li><strong data-i18n="contact.emailLabel">Email</strong><span>hello@rumpuree.com</span></li>
+          <li><strong data-i18n="contact.hoursLabel">Studio Hours</strong><span data-i18n="contact.hoursValue">Mon – Sat, 10 AM – 10 PM</span></li>
+        </ul>
+
+        <div class="social-row">
+          <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="newsletter-card">
+        <h3 data-i18n="contact.newsletterTitle">Stay In The Loop</h3>
+        <p data-i18n="contact.newsletterText">Get class updates, new promotions and event invites straight to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" required data-i18n-placeholder="contact.newsletterPlaceholder" placeholder="Your email address">
+          <button type="submit" class="btn btn-ember" data-i18n="contact.newsletterButton">Subscribe</button>
+        </form>
+        <p class="newsletter-note" id="newsletterNote" hidden data-i18n="contact.newsletterSuccess">Thanks — you're subscribed!</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Rumpuree World Dance Studio">
+      <p data-i18n="footer.tagline">Teaching the world to dance since 2006.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+      <ul>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#classes" data-i18n="nav.classes">Classes</a></li>
+        <li><a href="#schedule" data-i18n="nav.schedule">Schedule</a></li>
+        <li><a href="#royalty" data-i18n="nav.loyalty">Dance Royalty</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.programs">Programs</h3>
+      <ul>
+        <li><span data-i18n="classes.salsa.title">Salsa</span></li>
+        <li><span data-i18n="classes.bachata.title">Bachata</span></li>
+        <li><span data-i18n="classes.tango.title">Argentine Tango</span></li>
+        <li><span data-i18n="classes.ballet.title">Ballet</span></li>
+        <li><span data-i18n="classes.pole.title">Pole Dance</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.language">Language</h3>
+      <ul class="footer-lang">
+        <li><button type="button" data-lang="en">English</button></li>
+        <li><button type="button" data-lang="bn">বাংলা</button></li>
+        <li><button type="button" data-lang="es">Español</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>© <span id="year"></span> Dev-Shofiqur <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <p class="footer-credit">Studio photography courtesy of Wikimedia Commons contributors.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
